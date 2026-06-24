@@ -9,7 +9,7 @@ export const siteConfig: SiteConfig = {
 	title: "Yiori Blog",
 
 	// 站点副标题
-	subtitle: "Demo site",
+	subtitle: "",
 
 	// 站点 URL
 	site_url: "https://firefly.cuteleaf.cn",
@@ -20,13 +20,10 @@ export const siteConfig: SiteConfig = {
 
 	// 站点关键词
 	keywords: [
-		"Firefly",
-		"Fuwari",
-		"Astro",
 		"ACGN",
-		"博客",
+		"本地动画",
+		"网络安全",
 		"技术博客",
-		"静态博客",
 	],
 
 	// 主题色
@@ -162,7 +159,7 @@ export const siteConfig: SiteConfig = {
 	// bangumi配置
 	bangumi: {
 		// Bangumi用户ID
-		userId: "1143164",
+		userId: "751196",
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
 		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
 		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据
@@ -174,7 +171,7 @@ export const siteConfig: SiteConfig = {
 		// 条目类型排序，数组中的类型将按顺序优先展示
 		// 可选值: "anime" | "book" | "music" | "game" | "real" (暂不支持"real"类型)
 		// 未列出的类型将按默认顺序排在后面
-		categoryOrder: ["anime", "book", "music", "game"],
+		categoryOrder: ["anime", "book"],
 	},
 
 	// 追番配置（Bilibili + TMDB）
@@ -182,7 +179,7 @@ export const siteConfig: SiteConfig = {
 		// Bilibili 配置
 		bilibili: {
 			// 你的 Bilibili 用户 UID
-			uid: "38932988",
+			uid: "281018882",
 		},
 		// TMDB 配置（可选，需要翻墙）
 		// tmdb: {
