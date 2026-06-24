@@ -165,7 +165,7 @@ export const siteConfig: SiteConfig = {
 		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据
 		mode: "dynamic",
 		// Bangumi API 地址
-		apiUrl: "https://bgmapi.anibt.net",
+		apiUrl: "https://api.bgm.tv/v0/users/Yiori/collections?subject_type=2&type=3&limit=30&offset=0",
 		// 详情页地址
 		subjectBaseUrl: "https://bgmmi.anibt.net/subject/",
 		// 条目类型排序，数组中的类型将按顺序优先展示
