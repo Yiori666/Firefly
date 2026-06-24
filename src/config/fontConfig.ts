@@ -29,29 +29,51 @@ import type { FontDefinition, FontSelectionConfig } from "@/types/fontConfig";
 export const fontsList: FontDefinition[] = [
 	{
 		name: "Zen Maru Gothic",
-		cssVariable: "--font-zen-maru-gothic",
-		provider: "fontsource",
-		weights: ["300", "400", "500", "600", "700"],
-		styles: ["normal"],
-		subsets: ["latin", "cyrillic"],
-		fallbacks: ["sans-serif"],
-	},
+        cssVariable: "--font-zen-maru-gothic",
+        provider: "local",                           // 改为 local
+  		options: {
+    	variants: [
+      	// 只保留你实际下载了的权重和样式，每个变体指定 src 路径
+      	{
+        	src: ['./public/assets/fonts/zen-maru-gothic_5.2.8_latin-300-normal.woff2'],
+        	weight: 300,
+        	style: 'normal',
+      		},
+			],
+  		},
+  	fallbacks: ["sans-serif"],
+	} ,
+	
 	{
 		name: "Inter",
 		cssVariable: "--font-inter",
-		provider: "fontsource",
-		weights: ["300", "400", "500", "600", "700"],
-		styles: ["normal"],
-		subsets: ["latin", "cyrillic"],
-		fallbacks: ["sans-serif"],
+		provider: "local",
+		options: {
+    	variants: [
+      	// 只保留你实际下载了的权重和样式，每个变体指定 src 路径
+      	{
+        	src: ['./public/assets/fonts/inter_5.2.6_latin-300-normal.woff2'],
+        	weight: 300,
+        	style: 'normal',
+      		},
+			],
+  		},
+  	fallbacks: ["sans-serif"],
 	},
 	{
 		name: "JetBrains Mono",
 		cssVariable: "--font-jetbrains-mono",
-		provider: "fontsource",
-		weights: ["400", "700"],
-		styles: ["normal"],
-		subsets: ["latin", "cyrillic"],
+		provider: "local",
+		options: {
+    	variants: [
+      	// 只保留你实际下载了的权重和样式，每个变体指定 src 路径
+      	{
+        	src: ['./public/assets/fonts/jetbrains-mono_5.2.6_latin-400-normal.woff2'],
+        	weight: 400,
+        	style: 'normal',
+      		},
+			],
+  		},
 		fallbacks: [
 			"ui-monospace",
 			"SFMono-Regular",
